@@ -16,6 +16,10 @@ Install FFMPEG
 
 `sudo apt install ffmpeg`
 
+Related Grahic Dependencies
+
+`sudo apt update && sudo apt install -y python3-opencv`
+
 # Build / Compile
 
 `yarn run build`
