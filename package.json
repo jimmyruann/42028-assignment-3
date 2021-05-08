@@ -7,8 +7,12 @@
 	"scripts": {
 		"start": "PORT=3000 node ./build/index.js",
 		"dev": "nodemon server/index.ts",
+		"build": "npm run build:frontend && npm run build:server",
+		"install-packages": "npm run install:frontend && npm run install:server",
 		"build:frontend": "yarn --cwd frontend build",
-		"build:server": "tsc"
+		"build:server": "tsc",
+		"install:frontend": "yarn --cwd frontend install",
+		"install:server": "yarn install"
 	},
 	"devDependencies": {
 		"@types/cors": "^2.8.10",
