@@ -1,2 +1,6 @@
 node_modules
 server/uploads
+cnn/input/*
+cnn/output/*
+cnn/models/*
+build

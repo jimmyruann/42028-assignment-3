@@ -5,11 +5,14 @@
 	"author": "jimmyruann <jimmyruan@hotmail.com>",
 	"license": "MIT",
 	"scripts": {
+		"start": "PORT=3000 node ./build/index.js",
 		"dev": "nodemon server/index.ts",
-		"build:frontend": "yarn --cwd frontend build"
+		"build:frontend": "yarn --cwd frontend build",
+		"build:server": "tsc"
 	},
 	"devDependencies": {
 		"@types/cors": "^2.8.10",
+		"@types/crypto-js": "^4.0.1",
 		"@types/express": "^4.17.11",
 		"@types/multer": "^1.4.5",
 		"@types/node": "^15.0.2",
@@ -20,6 +23,7 @@
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
+		"crypto-js": "^4.0.0",
 		"express": "^4.17.1",
 		"multer": "^1.4.2",
 		"python-shell": "^3.0.0",

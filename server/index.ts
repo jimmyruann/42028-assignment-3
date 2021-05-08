@@ -9,12 +9,12 @@ const app: Application = express();
 const server = http.createServer(app);
 const io = new so.Server(server, {
 	cors: {
-	  origin: "http://localhost:3000",
-	  methods: ["GET", "POST"]
-	}
-  });
+		origin: "http://localhost:3000",
+		methods: ["GET", "POST"],
+	},
+});
 
-const port: number = 3001;
+const port: number = parseInt(process.env.PORT || "3001");
 
 app.use(cors());
 // Frontend
@@ -24,8 +24,4 @@ app.use("/api", API_Routes.r(io));
 
 server.listen(port, () => {
 	console.log(`App is listening on port ${port} !`);
-});
-
-io.on("connection", function (socket) {
-	console.log("a user connected");
 });
