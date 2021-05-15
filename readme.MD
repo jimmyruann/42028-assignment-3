@@ -8,6 +8,15 @@ Install `python3-opencv`, FFMPEG
 
 `sudo apt update && sudo apt install python3-opencv ffmpeg`
 
+Install NodeJS
+
+`curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs`
+
+Install `yarn`
+
+`sudo npm install yarn -g`
+
 Install packages for frontend and backend
 
 `yarn run install-packages`
