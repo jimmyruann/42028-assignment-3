@@ -9,8 +9,8 @@ import skvideo.io
 
 # Usage: 
 # python run_classification.py -m ./models/resNetModel.h5 \
-#     -i ./input/fdbabd17c2556a1f2c4c98336e779893.mp4 \
-#     -o ./output/fdbabd17c2556a1f2c4c98336e779893.mp4
+#     -i ./input/example.mp4 \
+#     -o ./output/example.mp4
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-m", "--model", required=True, help="path to trained serialized model")

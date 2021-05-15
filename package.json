@@ -5,7 +5,7 @@
 	"author": "jimmyruann <jimmyruan@hotmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"start": "PORT=3000 node ./build/index.js",
+		"start": "node ./build/index.js",
 		"dev": "nodemon server/index.ts",
 		"build": "npm run build:frontend && npm run build:server",
 		"install-packages": "npm run install:frontend && npm run install:server",
